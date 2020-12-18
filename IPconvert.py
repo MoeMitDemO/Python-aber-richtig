@@ -38,15 +38,11 @@ class Ui(QtWidgets.QMainWindow):
         uic.loadUi('userinterface.ui', self)        # Lade die UI Datei
         self.show()                                 # GUI anzeigen
     
-class AnotherWindow(QtWidgets.QMainWindow):
-    """
-    This "window" is a QWidget. If it has no parent, it
-    will appear as a free-floating window as we want.
-    """
+class InfoFenster(QtWidgets.QMainWindow):
     def __init__(self):
-        super().__init__()
-        uic.loadUi('info.ui', self)        # Lade die UI Datei
-        self.show()       
+        super().__init__()                          # Rufe die Klasse auf
+        uic.loadUi('info.ui', self)                 # Lade die UI Datei
+        self.show()                                 # GUI anzeigen
 
 app = QtWidgets.QApplication(sys.argv)              # Erzeuge eine Instanz von QtWidgets.QApplication
 window = Ui()                                       # Erzeuge eine Instanz unserer Klasse (Ui)
@@ -120,16 +116,12 @@ def umrechnen(wert):
             neuerPC.raum        = str(bin(int(neuerPC.raum))).replace("0b", "")
             neuerPC.nummer      = str(bin(int(neuerPC.nummer))).replace("0b", "")
             
-            #----------------------------#
-            # ZUSAMMENSETZEN & REPLACEN  #
-            #----------------------------#
 
             #neueIP = IP (neuerPC.gebaeude, neuerPC.etage, neuerPC.raum, neuerPC.nummer)
             nH = Hostanteil(neuerPC.gebaeude, neuerPC.etage, neuerPC.raum, neuerPC.nummer)
     
             window.teErgebnis.setText(nH.ipTeileZuHostanteil())
         
-
 
             #----------------------------#
             #     LOGDATEI SCHREIBEN     #
@@ -164,7 +156,7 @@ def umrechnen(wert):
 
 def zeigeInfo():        #Zeigt das Info-Fenster
     global infos
-    infos = AnotherWindow()
+    infos = InfoFenster()
 
 window.btnUmrechnen.clicked.connect(umrechnen)      # Legt fest, dass bei Knopfdruck auf "umrechnen" die Funktion "umrechnen()" ausgeführt wird
 window.pushButton.clicked.connect(zeigeInfo)        # Legt fest, dass bei Knopfdruck auf "Info" die Funktion "zeigeInfo" ausgeführt wird
