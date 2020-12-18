@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>418</width>
-    <height>301</height>
+    <width>398</width>
+    <height>321</height>
    </rect>
   </property>
   <property name="font">
@@ -22,7 +22,7 @@
    <string notr="true">IP-Adresse umrechnen</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0.023, x2:1, y2:1, stop:0 rgba(0, 0, 28, 255), stop:0.533708 rgba(0, 20, 81, 255));</string>
+   <string notr="true">background-color: rgba(0, 71, 160, 255)</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QFrame" name="frame">
@@ -54,12 +54,14 @@
      </property>
      <property name="font">
       <font>
-       <family>Gill Sans MT</family>
-       <pointsize>14</pointsize>
+       <family>Century Gothic</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: none; color: cyan; align: center</string>
+      <string notr="true">background-color: none; color: white; align: center</string>
      </property>
      <property name="text">
       <string>IP-Adresse umrechnen</string>
@@ -73,13 +75,13 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>40</y>
-      <width>771</width>
-      <height>261</height>
+      <y>50</y>
+      <width>401</width>
+      <height>271</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: none</string>
+     <string notr="true">background-color: none; </string>
     </property>
     <property name="frameShape">
      <enum>QFrame::NoFrame</enum>
@@ -91,50 +93,24 @@
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>40</y>
+       <y>20</y>
        <width>131</width>
        <height>31</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <family>Gill Sans MT</family>
-       <pointsize>14</pointsize>
+       <family>Century Gothic</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: none; color: cyan</string>
+      <string notr="true">background-color: none; color: white</string>
      </property>
      <property name="text">
       <string>IP-Adresse:</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_3">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>90</y>
-       <width>131</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Gill Sans MT</family>
-       <pointsize>14</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: none; color: cyan</string>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::StyledPanel</enum>
-     </property>
-     <property name="text">
-      <string>PC auswählen:</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -144,122 +120,152 @@
      <property name="geometry">
       <rect>
        <x>190</x>
-       <y>40</y>
-       <width>171</width>
+       <y>20</y>
+       <width>191</width>
        <height>31</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <pointsize>14</pointsize>
+       <family>Century Gothic</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgba(0, 0, 0, 0); color: cyan;border: 1px solid cyan</string>
+      <string notr="true">background-color: rgba(255, 255, 255, 0);color: white; border: 2px solid white</string>
      </property>
      <property name="inputMask">
-      <string>000.000.000.000</string>
+      <string>00.0.000.000</string>
      </property>
      <property name="text">
-      <string>1...</string>
+      <string>10.0..</string>
      </property>
      <property name="maxLength">
-      <number>15</number>
+      <number>12</number>
      </property>
      <property name="frame">
       <bool>true</bool>
      </property>
+     <property name="cursorPosition">
+      <number>6</number>
+     </property>
      <property name="placeholderText">
-      <string>192.168.100.100</string>
+      <string>10.0..</string>
      </property>
      <property name="cursorMoveStyle">
       <enum>Qt::VisualMoveStyle</enum>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_2">
+    <widget class="QLineEdit" name="angefragterPCnummer">
      <property name="geometry">
       <rect>
        <x>340</x>
-       <y>90</y>
+       <y>70</y>
        <width>41</width>
        <height>31</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <pointsize>14</pointsize>
+       <family>Century Gothic</family>
+       <pointsize>12</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgba(0, 0, 0, 0); color: cyan;border: 1px solid cyan</string>
+      <string notr="true">background-color: rgba(255, 255, 255, 0);color: white; border: 2px solid white</string>
      </property>
      <property name="inputMask">
       <string>00</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_3">
+    <widget class="QLineEdit" name="angefragterPCraum">
      <property name="geometry">
       <rect>
        <x>290</x>
-       <y>90</y>
+       <y>70</y>
        <width>41</width>
        <height>31</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <pointsize>14</pointsize>
+       <family>Century Gothic</family>
+       <pointsize>12</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgba(0, 0, 0, 0); color: cyan;border: 1px solid cyan</string>
+      <string notr="true">background-color: rgba(255, 255, 255, 0);color: white; border: 2px solid white</string>
      </property>
      <property name="inputMask">
       <string>00</string>
      </property>
     </widget>
-    <widget class="QComboBox" name="comboBox">
+    <widget class="QComboBox" name="angefragterPCetage">
      <property name="geometry">
       <rect>
        <x>240</x>
-       <y>90</y>
+       <y>70</y>
        <width>41</width>
        <height>31</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <pointsize>14</pointsize>
+       <family>Century Gothic</family>
+       <pointsize>12</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgba(0, 0, 0, 0); color: cyan;border: 1px solid cyan</string>
+      <string notr="true">background-color: rgba(255, 255, 255, 0);color: white; border: 2px solid white</string>
      </property>
+     <item>
+      <property name="text">
+       <string>E</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>3</string>
+      </property>
+     </item>
     </widget>
-    <widget class="QComboBox" name="comboBox_2">
+    <widget class="QComboBox" name="angefragterPCgebaeude">
      <property name="geometry">
       <rect>
        <x>190</x>
-       <y>90</y>
+       <y>70</y>
        <width>41</width>
        <height>31</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <pointsize>14</pointsize>
+       <family>Century Gothic</family>
+       <pointsize>12</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgba(0, 0, 0, 0); color: cyan;border: 1px solid cyan</string>
+      <string notr="true">background-color: rgba(255, 255, 255, 0);color: white; border: 2px solid white</string>
      </property>
      <item>
       <property name="text">
@@ -290,17 +296,31 @@
     <widget class="QRadioButton" name="ipzupc">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>150</y>
-       <width>82</width>
-       <height>17</height>
+       <x>20</x>
+       <y>130</y>
+       <width>91</width>
+       <height>20</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <family>Century Gothic</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-color: none; color: cyan</string>
+      <string notr="true">background-color: rgba(255, 255, 255, 0);color: white;</string>
      </property>
      <property name="text">
-      <string>IPzuPC</string>
+      <string>IP zu PC</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>16</width>
+       <height>16</height>
+      </size>
      </property>
      <property name="checked">
       <bool>true</bool>
@@ -309,77 +329,165 @@
     <widget class="QRadioButton" name="pczuip">
      <property name="geometry">
       <rect>
-       <x>120</x>
-       <y>150</y>
-       <width>82</width>
-       <height>17</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: none; color: cyan</string>
-     </property>
-     <property name="text">
-      <string>PCzuIP</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="btnUmrechnen">
-     <property name="geometry">
-      <rect>
-       <x>260</x>
-       <y>150</y>
-       <width>71</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: none; color: cyan</string>
-     </property>
-     <property name="text">
-      <string>Umrechnen</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="lblErgebnis">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>210</y>
-       <width>391</width>
+       <x>130</x>
+       <y>130</y>
+       <width>91</width>
        <height>20</height>
       </rect>
      </property>
      <property name="font">
       <font>
+       <family>Century Gothic</family>
        <pointsize>12</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: none; color: cyan</string>
+      <string notr="true">background-color: rgba(255, 255, 255, 0);color: white</string>
      </property>
      <property name="text">
-      <string>Ergebnis</string>
+      <string>PC zu IP</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnUmrechnen">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>125</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century Gothic</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);color: white; border: 2px solid white</string>
+     </property>
+     <property name="text">
+      <string>Umrechnen</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century Gothic</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);color: white;</string>
+     </property>
+     <property name="text">
+      <string>PC auswählen:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="teErgebnis">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>16</x>
+       <y>210</y>
+       <width>401</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century Gothic</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);color: white; </string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Century Gothic'; font-size:12pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="placeholderText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>-10</y>
+       <width>371</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>371</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
      </property>
     </widget>
     <zorder>angefragteIP</zorder>
     <zorder>label_2</zorder>
-    <zorder>label_3</zorder>
-    <zorder>lineEdit_2</zorder>
-    <zorder>lineEdit_3</zorder>
-    <zorder>comboBox</zorder>
-    <zorder>comboBox_2</zorder>
+    <zorder>angefragterPCnummer</zorder>
+    <zorder>angefragterPCraum</zorder>
+    <zorder>angefragterPCetage</zorder>
+    <zorder>angefragterPCgebaeude</zorder>
     <zorder>ipzupc</zorder>
     <zorder>pczuip</zorder>
     <zorder>btnUmrechnen</zorder>
-    <zorder>lblErgebnis</zorder>
+    <zorder>label_3</zorder>
+    <zorder>teErgebnis</zorder>
+    <zorder>line</zorder>
+    <zorder>line_2</zorder>
    </widget>
    <widget class="QFrame" name="frame_3">
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>300</y>
+      <y>330</y>
       <width>771</width>
-      <height>81</height>
+      <height>51</height>
      </rect>
     </property>
     <property name="styleSheet">
