@@ -10,6 +10,24 @@
     <height>321</height>
    </rect>
   </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>398</width>
+    <height>321</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>398</width>
+    <height>321</height>
+   </size>
+  </property>
   <property name="font">
    <font>
     <family>Candara</family>
@@ -20,6 +38,11 @@
   </property>
   <property name="windowTitle">
    <string notr="true">IP-Adresse umrechnen</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <activeon>laptop.ico</activeon>
+   </iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgba(0, 71, 160, 255)</string>
@@ -70,6 +93,40 @@
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>0</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="toolTipDuration">
+      <number>-1</number>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../../Downloads/information.png</normaloff>
+       <normalon>../../../Downloads/information.png</normalon>../../../Downloads/information.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+    </widget>
    </widget>
    <widget class="QFrame" name="frame_2">
     <property name="geometry">
@@ -79,6 +136,24 @@
       <width>401</width>
       <height>271</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>401</width>
+      <height>271</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>401</width>
+      <height>271</height>
+     </size>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: none; </string>
